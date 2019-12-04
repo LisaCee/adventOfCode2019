@@ -105,11 +105,18 @@ function santaFuel(mass) {
   134887,
   63969]
   
+  function santaFuel(mass) {
+    return Math.floor(mass/3) - 2
+  }
+
   function addItUp(arr) {
     let total = 0;
-    for (num of arr){
-      console.log(santaFuel(num))
-      total += santaFuel(num)
+    for (num of arr) {
+      let temp = santaFuel(num)
+      while (temp > 0) {
+        total += temp
+        temp = Math.floor(temp / 3) - 2
+      }
     }
   
     return total;
