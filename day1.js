@@ -2,9 +2,8 @@ function santaFuel(mass) {
     return Math.floor(mass/3) - 2
   }
   
-  santaFuel(100756)
   
-  let totals = [66016,
+let totals = [66016,
   85415,
   51706,
   96238,
